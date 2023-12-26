@@ -1,0 +1,33 @@
+.metrics {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  padding: 40px 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.metrics__metric {
+  min-width: 150px;
+}
+
+.metric__label,
+.metric__description {
+  text-align: center;
+}
+
+.metric__label {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 450px) {
+  .metrics {
+    gap: 48px;
+    justify-content: space-evenly;
+    padding: 80px 0;
+  }
+}

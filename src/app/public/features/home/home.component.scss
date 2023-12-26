@@ -1,0 +1,19 @@
+.home {
+  padding-top: 70px;
+}
+
+.content__target {
+  max-width: 780px;
+  text-align: center;
+  margin: 40px auto 0;
+}
+
+@media screen and (min-width: 992px) {
+  .home {
+    padding: 0;
+  }
+
+  .content__target {
+    margin: 80px auto 0;
+  }
+}

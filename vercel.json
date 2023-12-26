@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "public": true,
+  "name": "lofi-tech-app",
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "dist/lofi-tech-app/browser/**"
+    }
+  }
+}

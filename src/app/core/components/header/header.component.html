@@ -1,0 +1,29 @@
+<header class="header" #header>
+  <div class="header__container container">
+    <div class="header__logo">
+      <a href="#">
+        <img
+          class="logo__image"
+          src="assets/images/logos/lofitech.svg"
+          alt="Lofi Tech Logo"
+          width="115px"
+          height="48px"
+        />
+      </a>
+    </div>
+
+    <nav class="header__nav">
+      <ul class="nav__links">
+        @for (item of [1, 2, 3, 4]; track $index) {
+        <li class="links__link">
+          <a class="link__anchor" href="">LINK</a>
+        </li>
+        }
+      </ul>
+    </nav>
+
+    <div class="header__language">
+      <p>W I</p>
+    </div>
+  </div>
+</header>

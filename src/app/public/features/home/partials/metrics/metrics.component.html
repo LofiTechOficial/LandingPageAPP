@@ -1,0 +1,8 @@
+<div class="metrics">
+  @for (metric of metrics; track metric.label) {
+  <div class="metrics__metric">
+    <h3 class="metric__label txt-focus">{{ metric.label }}</h3>
+    <h4 class="metric__description">{{ metric.description }}</h4>
+  </div>
+  }
+</div>

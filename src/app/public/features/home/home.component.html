@@ -1,0 +1,27 @@
+<article class="home">
+  @if (isMobile) {
+  <section class="home__introducing">
+    <home-introducing />
+  </section>
+  } @defer (on viewport) {
+  <section class="home__content dark-bg">
+    <div class="content__banner">
+      <home-carousel />
+    </div>
+
+    <div class="container">
+      <p class="content__target">
+        A <span class="txt-focus"> Lofi Tech </span> tem como missão
+        <span class="txt-painted">impulsionar</span> o poder de seu negócio
+        através do mundo digital
+      </p>
+    </div>
+
+    <div class="content__metrics container no-padding">
+      <home-metrics />
+    </div>
+  </section>
+  } @placeholder {
+  <p></p>
+  }
+</article>
